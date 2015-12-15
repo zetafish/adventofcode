@@ -11,7 +11,8 @@
                  [rhizome "0.2.5"]
                  [automat "0.2.0-alpha2"]
                  [reduce-fsm "0.1.4"]
-                 [org.clojure/math.combinatorics "0.1.1"]]
+                 [org.clojure/math.combinatorics "0.1.1"]
+                 [incanter "1.9.0"]]
   :main ^:skip-aot advent.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
