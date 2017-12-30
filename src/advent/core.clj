@@ -1,7 +1,10 @@
 (ns advent.core
-  (:gen-class))
+  (:require [clojure.java.io :as io]
+            [clojure.string :as str]))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn read-input
+  [n]
+  (->
+    (io/resource n)
+    (slurp)
+    (str/split-lines)))
